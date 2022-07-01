@@ -1,0 +1,66 @@
+
+//Significado De Estos Conceptos
+
+ 1ro_ Variables
+ 2do_ Strings
+ 3ro_ Funciones (argumentos, `return`)
+ 4to_ Declaraciones `if`
+ 5to_ Valores booleanos (`true`, `false`)
+
+ 1ro_ Respuesta:
+   Las variables Son Cajas Donde Uno Puede Guardar Cosas. A Estas Variables Para Recordarlas Le Colocamos Un Nombre Mas O Menos Descriptivo, Valga la Rebundancia 
+   Que Nois Descriva que Guardamos En Esa Caja.
+
+2do_ Respuesta:
+   Los Strings; Es Texto, Cuando Declaramos Una Variable Donde Guardaremos Un Texto, Este Texto Lo Tenemos Que Envolver Entre Comillas Simples o Dobles.
+   Asi...  var nombre = "KailyKinG";
+   A Los String Se Les Llama Tambien Cadenas, Porque Enrealidad Son Cadena De Caracteres.
+
+3ro_ Respuesta:
+   Las Funciones Es Un Contenedor Que Al Ser Llamada Ejecutan El Codigo Que Esta Dentro Del Interior De Este Contenedor.
+   mmmmm En Esta Funcion Esta El Codigo De Dar Un Saludo Por Consola
+    Ojo tambien Puede Recibir Argumentos Que Nos Ayudan A Completar El Codigo Que Esta Dentro De La Funcion
+   Ejemplo:
+
+   3.1_ Creando Una Funcion De saludar Con Un Argumento, Los Argumentos Son Los Que Colocamos Entre Parentecis
+
+    function saludar(nombre){
+      console.log("Hola "+nombre);
+    }
+
+   3.2_ Llamando A Funcion saludar y Le Damos Como Argumento El String "KailyKinG"
+
+    saludar("KailyKinG");
+
+    3.3_ El Resultado Es:
+
+   Hola KailyKinG
+
+
+4to_ Respuesta:
+   La Declaracion if; Nos Ayuda A Tomar Decisiones, Realiza Una Comprobacion, Segun El Resultado ara Una Cosa U Otra. Estas Comprobaciones Devulven true ( Verdadero ) O false ( Falso )
+
+   En Un Ejemplo Basico Si La Comprobacion Resultase Ser Verdadera Entonces Ejecutara El Codigo Entre Llaves {}
+   Si Por El Contrario La Comprobacion Resultase Ser Falsa No Lo Ejecutara
+
+   Ej1:
+   if(2 === 2){
+      console.log("Si Son Iguales");
+   }
+
+   resultado: Si Son Iguales 
+
+   Ej2:
+   if(3 === 2){
+      console.log("Si Son Iguales");
+   }
+
+   resultado: 
+
+   En El Segundo Ejemplo Como No Son Iguales Los Numero, No Ejecuta El Codigo Entre Llaves {}, Ya Que la Comprobacion Resulto Ser "false".
+
+
+5to_ Respuesta:
+
+Los Valores Booleanos Son "true" ( Verdadero ) y "false" ( Falso )
+Son Los Posibles Resultados Que Obtendremos Al Realizar Las Comprobaciones Que Necesitamos.
