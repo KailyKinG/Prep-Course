@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+   return array.shift();
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array.pop();
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
 
 
@@ -23,6 +26,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+   const newArray = array.map((valor) => (valor += 1));
+   return newArray;
 }
 
 
@@ -30,6 +35,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 
@@ -38,6 +45,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -47,6 +56,25 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+   let newString = "";
+
+   // for (let palabra of palabras) {
+   //   if (palabra === palabras[palabras.length - 1]) {
+   //     newString += palabra;
+   //   } else {
+   //     newString += palabra + " ";
+   //   }
+   // }
+
+    palabras.forEach((palabra) => {
+      if (palabra === palabras[palabras.length - 1]) {
+        newString += palabra;
+      } else {
+        newString += palabra + " ";
+      }
+    });
+
+   return newString;
 }
 
 
