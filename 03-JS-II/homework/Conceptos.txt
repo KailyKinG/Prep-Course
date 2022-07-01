@@ -1,0 +1,25 @@
+
+//Significados De Estos Conceptos
+//-------------------------------
+
+1ro_ for
+2do_  &&, ||, !
+
+1ro_ Respuesta:
+   - Se Llama Bucle for; Es Como Una Rueda Que Gira, Hay Que Colocarle Un Tope Para Que Solo De Las Vueltas Que Nosotros Queramos Y Asi No Las Este Dando De Manera Infinita.
+      Nos Ayuda A Repetir Una Instruccion: 
+      Por Ejemplo, Tenemos Una Bolsa Con Varios Numeros Y Nosotros Los Queremos Sumar. El Bucle Se Mete A Esta Bolsa Con Numeros Toma Uno Lo Guarda En Una Variable, Luego Toma Otro Numero Y  Lo Suma Al Numero Anterior En La Varible Y El Resultado Lo Guarda En La Misma Variable  Y Asi Tomo Otro Numero Y Repite El Proceso Hasta Que No Quede Ninguno En Bolsa Y Tengamos El Resultado Final De La Suma.
+
+2do_ Respuesta.1:
+   - El Operador && ( and ); mmmm haber Por Ejemplo En Una Declaracion "if" Nos Sirve 
+   Para Hacer Una Consulta. En Una Misma Declaracion if, Realizamos Dos Comprobaciones, Para Que Aquella Declaracion if Pueda Ser Verdadera, Las Dos Comprobaciones Tambien Lo Tendrian Que Ser, Si Una De Las Dos Declaraciones Resultase Ser False, Nos Dira Que El Resultado Final De La Declaracion if Sera falsa Y No Ejecurara El Codigo Entre Llaves.
+
+2do_ Respuesta.2:
+   - El Operador || ( or ); Es Muy Parecido Al Operador "&&" ( and ), Con La Diferencia Que Nos Dara Verdadero Si por Lo Menos Una De Las Dos Comprobaciones Sea Verdadera.
+      Solo Nos Dara Falso Si Las Dos Comprobaciones Sean Falsas.
+
+2do_Respuesta.3:
+   - El Operador ! ( not ); Es Usado Para Negar Una Comprobacion, Es Decir Si En Una Declaracion "if" Estamos Comprobando Si 2 === 2; Esto Obiamente Nos Dara Verdadero.
+   Pero Si Esta Comprobacion La Encerramos Entre Parentecis Asi... ( 2 === 2) Y Luego 
+   Al Principio Del Primer Parentesis Le Colocamos Este Simbolo ! Asi   !(2 === 2)
+   Lo Transformaremos A Su Valor Contrario. Tendra Un Valor False
