@@ -82,6 +82,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+    if(array.includes(elemento)){
+      return true;
+  }else{
+      return false;
+  }
 }
 
 
@@ -89,6 +94,15 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+
+    let result = 0;
+    numeros.forEach((num) => {
+        result += num;
+    });
+
+    //let result = numeros.reduce((a, b) => a + b);
+
+    return result;
 }
 
 
@@ -96,6 +110,10 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  const cantNotas = resultadosTest.length;
+  const promedio = resultadosTest.reduce((a, b) => a + b) / cantNotas;
+
+  return promedio;
 }
 
 
@@ -103,6 +121,15 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+
+  let numMasGrande = 0;
+  numeros.forEach((num) => {
+      if(num > numMasGrande){
+          numMasGrande = num;
+      }
+  });
+
+  return numMasGrande;
 }
 
 
@@ -110,6 +137,24 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
+  
+  let producto = 1;
+
+  if(arguments.length === 0){
+      return 0;
+  }
+  else if(arguments.length === 1){
+      return arguments[arguments.length -1];
+  }
+  else {
+      for(let i = 0; i < arguments.length; i++){
+          producto *= arguments[i];
+      }
+      
+  }
+
+  return producto;
 }
 
 
