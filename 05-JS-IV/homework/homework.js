@@ -259,7 +259,7 @@ const articulo = {
   precio: 1600,
   porcentajeDeDescuento: 0.20
 };
-console.log(agregarMetodoCalculoDescuento(articulo).calcularPrecioDescuento());
+console.log(agregarMetodoCalculoDescuento(articulo).calcularPrecioDescuento()); //Devulve 1280
 */
 
 
