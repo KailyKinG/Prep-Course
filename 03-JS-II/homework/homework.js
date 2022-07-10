@@ -176,7 +176,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   const tablaDel6 = [];
   for(let i = 0; i <= 10; i++){
-    const producto = 6 * i;
+    const producto = (6 * i);
     tablaDel6.push(producto);
   }
 
@@ -202,12 +202,10 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   let i = 1;
-  
   do{
     numero += 5;
     i++;
   }while(i <= 8);
-
   return numero;
 }
 
