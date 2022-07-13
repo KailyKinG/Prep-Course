@@ -129,7 +129,6 @@ function agregarMetodo() {
 }
   
 /*
-   const newPerson = crearInstanciaPersona("Juan", "Perez", 22, "Saavedra 123");
    agregarMetodo();
    console.log(newPerson.datos());
 */
