@@ -44,13 +44,41 @@ function agregarMetodoPrototype(Constructor) {
   }
 }
 
+/*
+function Camaleon(){
+   this.Camaleon = true;
+}
+agregarMetodoPrototype(Camaleon);
+const example = new Camaleon();
+console.log(example.saludar());
+console.log(example.decirAdios());
+*/
+
+
+
 function agregarStringInvertida() {
   // Agrega un método al prototype de String que devuelva la misma cadena de caracteres, pero invertida.
   // El método debe llamarse "reverse"
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
+    String.prototype.reverse = function () {
+      const newWord = [];
+      for (let i = 0; i < this.length; i++) {
+        newWord.unshift(this.charAt(i));
+      }
+      return newWord.join("");
+    };
 }
+
+/* 
+ agregarStringInvertida();
+ let word = new String("Tetonas");
+ console.log(word.reverse());
+*/
+
+
+
 
 // ---------------------------------------------------------------------------//
   //Crea el constructor de la clase "Persona"
@@ -64,23 +92,49 @@ function agregarStringInvertida() {
     //  }
 
   class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/) {
-      // Crea el constructor:
-
+    constructor(nombre, apellido, edad, domicilio) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+            this.docimilio = domicilio;
     }
-}
+
+    detalle(){
+        return {Nombre: this.nombre, Apellido: this.apellido, Edad: this.edad, Domicilio: this.docimilio,};
+      }
+    }
+
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
+   let user = new Persona(nombre, apellido, edad, dir);
+   return user;
 }
+
+/*
+const newPerson = crearInstanciaPersona("Juan", "Perez", 22, "Saavedra 123");
+console.log(newPerson.detalle());
+*/
+
+
   
 function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
+  Persona.prototype.datos = function(){
+   return this.nombre+", "+this.edad+" años";
+  }
 }
   
+/*
+   const newPerson = crearInstanciaPersona("Juan", "Perez", 22, "Saavedra 123");
+   agregarMetodo();
+   console.log(newPerson.datos());
+*/
+
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
