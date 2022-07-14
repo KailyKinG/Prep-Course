@@ -1,5 +1,9 @@
 h1 {
-   color: teal;
+   color: blue;
+}
+
+h4 {
+   font-size: 20px;
 }
 img {
    width:400px;
@@ -14,4 +18,30 @@ img {
 #spanId{
    font-size: 18px;
    margin: 50px;
+}
+
+body {
+   background-image: url('https://cronicaglobal.elespanol.com/uploads/s1/70/92/98/1/tree-3369950-1280.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   color: white;
+}
+
+.divClass {
+   background-color: rgba(255,255,255,0.5);
+   padding: 20px;
+   border: solid 5px black;
+   border-radius: 10px;
+   color: black;
+   font-weight: bold;
+   
+}
+
+div:not(last-of-type){
+   margin-bottom: 10px;
 }
