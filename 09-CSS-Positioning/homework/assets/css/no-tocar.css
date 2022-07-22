@@ -64,7 +64,7 @@ body {
   padding: 0 10px;
 }
 
-#ejercicioSiete {
+#ejercicioSiete { /*div Mayor*/
   width: 500px;
   height: 400px;
   margin-left: auto;
@@ -75,13 +75,13 @@ body {
   display: flex;
 }
 
-.textoElemento {
+.textoElemento { /*span*/
   display: block;
   text-align: center;
   align-self: center;
 }
 
-.elementos {
+.elementos { /*divs Menores*/
   width: 150px;
   height: 100px;
   display: flex;
